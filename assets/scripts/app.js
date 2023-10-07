@@ -55,6 +55,10 @@
 // ul.appendChild(listItem);
 
 // ? textContent property
-const ul = document.querySelector('.menu');
-// ul.textContent = 'Hello';
-ul.innerHTML = '<h1>Welcome to JavaScript</h1>';
+// const ul = document.querySelector('.menu');
+// // ul.textContent = 'Hello';
+// ul.innerHTML = '<h1>Welcome to JavaScript</h1>';
+
+// getComputedStyle
+const input = document.getElementById('input');
+console.log(window.getComputedStyle(input).width);
