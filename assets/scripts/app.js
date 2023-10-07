@@ -33,3 +33,11 @@
 // console.log(welcome.childNodes);
 // console.log(welcome.childElementCount);
 // console.log(welcome.children);
+
+// ? Getting previousElementSibling and nextElementSibling
+const second = document.querySelector('#second');
+console.log(second.previousElementSibling);
+console.log(second.nextElementSibling);
+const welcome = document.querySelector('.welcome');
+console.log(welcome.firstElementChild.nextElementSibling); // second p tag will be selected
+console.log(welcome.lastElementChild.previousElementSibling); //third p tag will be selected
