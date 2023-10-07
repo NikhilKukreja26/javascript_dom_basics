@@ -35,9 +35,14 @@
 // console.log(welcome.children);
 
 // ? Getting previousElementSibling and nextElementSibling
-const second = document.querySelector('#second');
-console.log(second.previousElementSibling);
-console.log(second.nextElementSibling);
-const welcome = document.querySelector('.welcome');
-console.log(welcome.firstElementChild.nextElementSibling); // second p tag will be selected
-console.log(welcome.lastElementChild.previousElementSibling); //third p tag will be selected
+// const second = document.querySelector('#second');
+// console.log(second.previousElementSibling);
+// console.log(second.nextElementSibling);
+// const welcome = document.querySelector('.welcome');
+// console.log(welcome.firstElementChild.nextElementSibling); // second p tag will be selected
+// console.log(welcome.lastElementChild.previousElementSibling); //third p tag will be selected
+
+const pTag = document.createElement('p');
+pTag.innerHTML =
+  '<a href = "https://www.github.com/NikhilKukreja26" target = "_blank">Nikhil Kukreja</a>';
+document.body.append(pTag);
