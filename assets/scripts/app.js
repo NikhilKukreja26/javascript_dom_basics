@@ -42,7 +42,14 @@
 // console.log(welcome.firstElementChild.nextElementSibling); // second p tag will be selected
 // console.log(welcome.lastElementChild.previousElementSibling); //third p tag will be selected
 
-const pTag = document.createElement('p');
-pTag.innerHTML =
-  '<a href = "https://www.github.com/NikhilKukreja26" target = "_blank">Nikhil Kukreja</a>';
-document.body.append(pTag);
+// ? createElement() method
+// const pTag = document.createElement('p');
+// pTag.innerHTML =
+//   '<a href = "https://www.github.com/NikhilKukreja26" target = "_blank">Nikhil Kukreja</a>';
+// document.body.append(pTag);
+
+// ? Adding Element using appendChild() or append() method
+const ul = document.querySelector('.menu');
+const listItem = document.createElement('li');
+listItem.textContent = 'Contact';
+ul.appendChild(listItem);
