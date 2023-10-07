@@ -48,8 +48,13 @@
 //   '<a href = "https://www.github.com/NikhilKukreja26" target = "_blank">Nikhil Kukreja</a>';
 // document.body.append(pTag);
 
-// ? Adding Element using appendChild() or append() method
+// // ? Adding Element using appendChild() or append() method
+// const ul = document.querySelector('.menu');
+// const listItem = document.createElement('li');
+// listItem.textContent = 'Contact';
+// ul.appendChild(listItem);
+
+// ? textContent property
 const ul = document.querySelector('.menu');
-const listItem = document.createElement('li');
-listItem.textContent = 'Contact';
-ul.appendChild(listItem);
+// ul.textContent = 'Hello';
+ul.innerHTML = '<h1>Welcome to JavaScript</h1>';
